@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { TripRequest, TripResponse } from './types';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://spotterbackend-u32o.onrender.com';
 
 export async function planTrip(data: TripRequest): Promise<TripResponse> {
   const response = await axios.post<TripResponse>(
